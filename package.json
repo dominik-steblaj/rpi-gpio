@@ -1,0 +1,35 @@
+{
+  "name": "primozpadar",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "concurrently \"npm run watch\" \"npm run build\" --names \"NODE,WP\" --prefix name",
+    "watch": "nodemon start.js",
+    "build": "webpack -w"
+  },
+  "author": "Primoz Padar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "onoff": "^5.0.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^4.1.1",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "mini-css-extract-plugin": "^0.8.0",
+    "nodemon": "^1.19.1",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.22.9",
+    "sass-loader": "^7.2.0",
+    "validator": "^11.1.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  }
+}

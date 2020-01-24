@@ -1,0 +1,43 @@
+.onoff {
+  &__container {
+    background: $bela;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  &__gumb {
+    background: $crna;
+    color: $rumena;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 50px;
+    height: 150px;
+    width: 80vw;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    &:hover {
+      background: darken($crna, 3);
+    }
+    &:active {
+      outline: none;
+      background: darken($crna, 7);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__status {
+    background: $modra;
+    color: $crna;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
